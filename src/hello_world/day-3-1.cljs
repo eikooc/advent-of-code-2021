@@ -1005,7 +1005,7 @@
   (apply mapv vector m))
 
 (def transposed (transpose diag_output))
-(def size (count (get tranposed 1)))
+(def size (count (get transposed 1)))
 (map #(reduce + %1) transposed)
 (str transposed)
 (defn mode [data]
